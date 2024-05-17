@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+header nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+header nav ul li a:hover{
+    color: #ff001e;
+    border-bottom: 2px solid #ff001e;
+}
+header h2 , span{
+    text-shadow: 0 0 10px #ff001e;
+}
+h1 , h2 , h3{
+    color: #ff001e;
+}
+h1{
+    font-size: 45px;
+    font-weight: 800;
+}
+h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+p , form{
+    color: white;
+    font-size: 18px;
+    padding-top: 30px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 110px;
+    margin: 0px 80px;
+    align-items: center;
+    align-items: stretch;
+}
+.texto-home{
+    width: 50%;
+}
+.texto-sobre{
+    width: 60%;
+}
+.home img{
+    width: 18%;
+    margin: 0px auto;
+}
+.sobre img{
+    width: 30%;
+    margin: 0 auto;
+}
+.texto-home p{
+    margin-bottom: 20px;
+}
+.texto-sobre h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.servicos , .portfolio{
+    justify-content: space-around;
+}
+.servicos h2 , .portfolio h2 , .contato h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.box{
+    border: 2px solid #ff001e;
+    padding: 50px;
+    text-align: center;
+    flex-basis: 250px;
+}
+ion-icon{
+    color: #b20217;
+    font-size: 80px;
+}
+.html:hover{
+    color: rgb(254, 165, 1);
+}
+.css:hover{
+   
+    color: rgb(62, 204, 247);
+}
+.Javascript:hover{
+    color: yellow;
+}
+.box:hover{
+    box-shadow: 0 0 10px #b20217;
+    text-shadow: 0 0 8px #b20217;
+}
+.projeto{
+    flex-basis: 350px;
+    padding: 25px;
+    border: 2px solid #b20217;
+    border-radius: 10px;
+    position: relative;
+}
+.projeto:hover{
+    box-shadow: 0 0 15px #ff001e;
+    text-shadow: 0 0 #b20217;
+}
+.projeto p , .projeto a{
+    text-shadow: none;
+}
+.projeto img{
+    width: 100%;
+    margin: 20px auto;
+}
+.projeto a{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+}
+.projeto a:hover{
+    color: #ff001e;
+}
+.contato{
+    align-items: center;
+}
+.foto{
+    background-image: url(img/perfill\ 3.png);
+    background-size: cover;
+    border-radius: 6px;
+}
+.gradiente{
+    background-image: linear-gradient(to right , transparent 50% , black 80%);
+    width: 100%;
+    height: 600px;
+}
+.foto , form{
+    width: 50%;
+}
+form{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+form div{
+    margin-bottom: 15px;
+}
+input , label , textarea{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 5px;
+}
+input:focus , textarea:focus{
+    outline: 2px solid #ff001e;
+}
+button{
+    color: white;
+    background-color: #ff001e;
+    padding: 10px 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #b20217;
+}
+footer{
+    display: inline-block;
+    border-top: 3px solid white;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+footer ul li{
+    display: inline-block;
+    margin: 20px 40px;
+}
+footer ul li a{
+    text-decoration: none;
+}
+footer ul li a ion-icon{
+    font-size: 20px;
+}
+footer ul li a ion-icon:hover{
+    color: #fa233c;
+}
+@media only screen and (max-width: 764px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    .home , .sobre , .contato{
+        flex-direction: column;
+    }
+    .texto-home , .texto-sobre , .foto , form{
+        width: 100%;
+    }
+    .home img{
+        width: 35%;
+    }
+    .sobre img{
+        order: 1;
+        margin-top: 50px;
+        width: 45%;
+    }
+    .servicos , .portfolio{
+      column-gap: 20px;
+      row-gap: 50px;
+    }
+    .gradiente{
+        background-image: linear-gradient(to bottom , transparent 50% , black 80%);
+    }
+}
+@media only screen and (max-width: 615px){
+    header{
+        position: relative;
+    }
+    header nav{
+        margin-top: 20px;
+    }
+    header nav ul li{
+        display: block;
+    }
+    section{
+        padding-top: 20px;
+        margin: 0px 15px;
+    }s
+    .servicos h2 , .portfolio h2 , .contato h2{
+        margin: 30px auto;
+    }
+
+    footer ul li{
+        display: inline-block;
+        margin: 20px;
+    }
+}
